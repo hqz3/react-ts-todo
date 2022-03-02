@@ -1,0 +1,43 @@
+.input {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 75%;
+}
+
+.input-box {
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.input-box:focus {
+  box-shadow: 0 0 10px 100vh rgba(0, 0, 0, 0.5);
+  transition: 0.1s;
+}
+
+.input-submit {
+  background: royalblue;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0 0.5rem black;
+  color: white;
+  padding: 0.75rem;
+  position: absolute;
+  right: 1rem;
+  transition: all 0.2s;
+}
+
+.input-submit:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.input-submit:active {
+  box-shadow: 0 0 0.25rem black;
+  transform: scale(0.8);
+}
