@@ -1,5 +1,4 @@
 .input {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   position: relative;
@@ -40,4 +39,57 @@
 .input-submit:active {
   box-shadow: 0 0 0.25rem black;
   transform: scale(0.8);
+}
+
+.todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1.25rem;
+  width: 80%;
+}
+
+.todo-single {
+  background-color: yellow;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 20px;
+  width: 45%;
+  max-width: 500px;
+}
+
+@media (max-width: 1000px) {
+  .todo-single {
+    width: 90%;
+  }
+}
+
+.todo-single:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+.todo-single-text {
+  background-color: yellow;
+  border: none;
+  font-size: 1rem;
+  overflow: wrap;
+  outline: none;
+  width: 100%;
+}
+
+.highlightTodo {
+  background-color: goldenrod;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding: 10px;
 }
